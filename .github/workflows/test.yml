@@ -4,4 +4,4 @@ jobs:
   Hello-World-Job:
     runs-on: codebuild-github-action-test2-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
-      - run: echo "Hello World!"
+      - run: aws s3 ls
